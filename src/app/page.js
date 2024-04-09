@@ -26,7 +26,9 @@ export default function Home() {
       <button onClick={() => clickEvent(1234)}>Click Me</button>
       <Link href="/about">Go to About Us Page</Link>
       <Link href="/login">Go to Login Page</Link>
-      <button onClick={() => navigate("login")}>Button Navigation</button>
+      <button onClick={() => navigate("login")}>Login Page</button>
+      <button onClick={() => navigate("about/about_student")}>Student About Page</button>
+
     </main>
   );
 }
