@@ -1,6 +1,7 @@
 'use client'
 import { useState } from "react";
 import styles from "./page.module.css";
+import Link from "next/link";
 
 export default function Home() {
 
@@ -29,6 +30,9 @@ export default function Home() {
       {/* below feature is similar to react library */}
       <InnerComponent/> 
       {InnerComponent()}
+      <Link href="/about">Go to About Us Page</Link>
+      <Link href="/login">Go to Login Page</Link>
+
     </main>
   );
 }
